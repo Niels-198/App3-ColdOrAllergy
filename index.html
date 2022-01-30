@@ -104,10 +104,9 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	
 	<div id="content" class="w3-container">
 		<p>Are your eyes watery or itchy?</p>
-		</div>
-		<a href="#two"  onclick="allergyAdd();" class="w3-btn w3-black"> Yes</a>
+		<a href="#two"  onclick="allergyAdd(); class="w3-btn w3-black"> Yes</a>
 									       	   
-		<a href="#two"  onclick="coldAdd();" class="w3-btn w3-black">No</a>
+		<a href="#two"  onclick="coldAdd(); class="w3-btn w3-black">No</a>
 	 </div><!-- added first question and the buttons for it -->
 
 </div>
@@ -119,10 +118,10 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	
 	<div id="content" class="w3-container">
 		<p>Do you have a fever?</p>
-		</div>
-		<a href="#three" onclick="coldAdd();" class="w3-btn w3-black"> Yes</a>
 		
-		<a href="#three"  onclick="allergyAdd();" class="w3-btn w3-black">No</a>
+		<a href="#three" onclick="coldAdd(); class="w3-btn w3-black"> Yes</a>
+		
+		<a href="#three"  onclick="allergyAdd(); class="w3-btn w3-black">No</a>
 	</div> <!-- added second page, second question and the buttons for it -->
 </div>	
 
@@ -134,8 +133,8 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	<div id="content" class="w3-container">
 		<p>Do you have a sore throat?</p>
 		</div>
-		<a href="#four"  onclick="coldAdd();" class="w3-btn w3-black"> Yes</a>
-		<a href="#four"  onclick="allergyAdd();" class="w3-btn w3-black">No</a>
+		<a href="#four"  onclick="coldAdd(); class="w3-btn w3-black"> Yes</a>
+		<a href="#four"  onclick="allergyAdd(); class="w3-btn w3-black">No</a>
 	</div> <!-- added third page, third question and the buttons for it -->
 </div>	
 	
@@ -147,8 +146,8 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	<div id="content" class="w3-container">
 		<p>Are your symptoms seasonal or chronic?</p>
 		</div>
-		<a href="#five"  onclick="allergyAdd();" class="w3-btn w3-black"> Yes</a>
-		<a href="#five"  onclick="coldAdd();" class="w3-btn w3-black">No</a>
+		<a href="#five"  onclick="allergyAdd(); class="w3-btn w3-black"> Yes</a>
+		<a href="#five"  onclick="coldAdd(); class="w3-btn w3-black">No</a>
 	</div> <!-- added fourth page, fourth question and the buttons for it -->
 </div>	
 	
@@ -158,7 +157,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	</div>
 	
 	<div id="content" class="w3-container">
-		<a href="#results"  onclick="getResults();" class="w3-btn w3-black"> Results</a>
+		<a href="#results"  onclick="getResults(); class="w3-btn w3-black"> Results</a>
 	</div> <!-- added a page that takes you to the results -->
 </div>	
 
