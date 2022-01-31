@@ -20,7 +20,7 @@ Brief Description of Goal of Code:
 To tell if user has a cold or allergies based on user responses.
  
 Known Issues:
-blah, blah, blah, blah
+No known coding issues.
 
 https://www.w3schools.com/w3css/default.asp
 https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-file
@@ -33,7 +33,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
       <link rel="stylesheet" href="w3.css">
       <link rel="stylesheet" href="w3-colors-flat.css">
    </head> 
-
+<!-- this sets up important background info for the app (including how it works on mobile devices -->
 
 <script>
         var allergy_count = 0;
@@ -44,11 +44,12 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
             allergy_count = allergy_count + 1;
 		
         }
-
+<!-- this calculates the number of responses that support the hypothesis that it is an allergy -->
         function coldAdd(){
             cold_count = cold_count + 1;
 		
         }
+<!-- this calculates the number of responses that support the hypothesis that it is a cold -->
 
 	function getResults() {
 		var allergyPercent = (allergy_count/4)*100;
@@ -88,7 +89,8 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 <div id="header" class="w3-container w3-flat-carrot">
 	<h1>Cold or Allergies?</h1>
 </div>
-	
+	<!-- sets up header and title of app on start page -->
+
 <div id="content" class="w3-container">
 	<p>Are you feeling like you might have a cold but wonder if it is allergies? Answer a few short questions to find out!</p>
 	<!--  corrected grammar -->
@@ -103,9 +105,12 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	<div id="header" class="w3-container w3-flat-carrot">
 		<h1>Question 1</h1>
 	</div>
-	
+		<!-- sets up header and  question number on first question page -->
+
 	<div id="content" class="w3-container">
 		<p>Are your eyes watery or itchy?</p>
+			<!-- this is the first question itself -->
+
 		<a href="#two"  onclick="allergyAdd();" class="w3-btn w3-black"> Yes</a>
 									       	   
 		<a href="#two"  onclick="coldAdd();" class="w3-btn w3-black">No</a>
@@ -118,10 +123,13 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	<div class="w3-container w3-flat-carrot">
 		<h1>Question 2</h1>
 	</div>
-	
+				<!-- sets up header and  question number on second question page -->
+
+
 	<div id="content" class="w3-container">
 		<p>Do you have a fever?</p>
-		
+				<!-- second question itself -->
+
 		<a href="#three" onclick="coldAdd();" class="w3-btn w3-black"> Yes</a>
 		
 		<a href="#three"  onclick="allergyAdd();" class="w3-btn w3-black">No</a>
@@ -133,10 +141,12 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	<div class="w3-container w3-flat-carrot">
 		<h1>Question 3</h1>
 	</div>
-	
+			<!-- sets up header and  question number on third question page -->
+
 	<div id="content" class="w3-container">
 		<p>Do you have a sore throat?</p>
-		
+				<!-- third question itself -->
+
 		<a href="#four"  onclick="coldAdd();" class="w3-btn w3-black"> Yes</a>
 		<a href="#four"  onclick="allergyAdd();" class="w3-btn w3-black">No</a>
 		<!-- buttons take in user response and takes them to the next page -->
@@ -147,10 +157,12 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	<div class="w3-container w3-flat-carrot">
 		<h1>Question 4</h1>
 	</div>
-	
+			<!-- sets up header and  question number on fourth question page -->
+
 	<div id="content" class="w3-container">
 		<p>Are your symptoms seasonal or chronic?</p>
-		
+				<!-- fourth question itself -->
+
 		<a href="#five"  onclick="allergyAdd();" class="w3-btn w3-black"> Yes</a>
 		<a href="#five"  onclick="coldAdd();" class="w3-btn w3-black">No</a>
 		<!-- buttons take in user response and takes them to the next page -->
@@ -161,12 +173,13 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	<div class="w3-container w3-flat-carrot">
 		<h1>Click below for results</h1>
 		</div>
-	
+			<!-- sets up the header that tells user to click on button for results -->
+
 	<div id="content" class="w3-container">
 		<p id="results"></p>
 		<a onclick="getResults();" class="w3-btn w3-black"> Results</a>
 		<!-- button gives you the results -->
-		
+
 	</div> <!-- added a page that takes you to the results -->
 </div>	
 			       </div>	
